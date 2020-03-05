@@ -1,0 +1,80 @@
+.roadmap-modal {
+	bottom: 100%;
+	left: 0;
+	width: auto;
+	height: auto;
+	padding: 40px;
+	-webkit-transform: translateY(-3rem);
+	transform: translateY(-3rem);
+	/* opacity: 0;
+	visibility: hidden; */
+	background: #161d2e;
+	z-index: 1;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.roadmap-modal .top {
+	bottom: 100%;
+	left: 0;
+	width: auto;
+	height: auto;
+	padding: 40px;
+	-webkit-transform: translateY(-3rem);
+	transform: translateY(-3rem);
+	opacity: 0;
+	visibility: hidden;
+	background: #002b95;
+	z-index: 1;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+.roadmap-modal.middle {
+	-webkit-transform: translateX(-50%) translateY(-3rem);
+	transform: translateX(-50%) translateY(-3rem);
+}
+.roadmap-modal.left {
+	right: 0;
+	left: initial;
+	-webkit-transform: translateY(-3rem);
+	transform: translateY(-3rem);
+}
+.roadmap-modal.down {
+	top: 100%;
+	bottom: initial;
+}
+.roadmap-modal h4 {
+	font-size: 1rem;
+}
+.roadmap-modal .right {
+	position: relative;
+}
+.roadmap-modal .left {
+	background-color: #18316d;
+}
+
+.roadmap-card:hover {
+	transition: all 0.3s ease-out;
+	-webkit-transform: translateY(-0.4rem);
+	transform: translateY(-0.4rem);
+	opacity: 1;
+	visibility: visible;
+}
+.roadmap-card:hover.middle {
+	-webkit-transform: translateY(-0.4rem) translateX(-50%);
+	transform: translateY(-0.4rem) translateX(-50%);
+}
+.roadmap-card:hover.middle.down {
+	-webkit-transform: translateY(0.4rem) translateX(-50%);
+	transform: translateY(0.4rem) translateX(-50%);
+}
+.roadmap-card:hover.left {
+	-webkit-transform: translateY(-0.4rem);
+	transform: translateY(-0.4rem);
+}
+.roadmap-card:hover.left.down {
+	-webkit-transform: translateY(0.4rem);
+	transform: translateY(0.4rem);
+}
+.roadmap-card:hover.down {
+	-webkit-transform: translateY(0.4rem);
+	transform: translateY(0.4rem);
+}
